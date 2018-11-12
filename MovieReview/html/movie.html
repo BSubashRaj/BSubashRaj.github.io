@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Index page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../js/script.js" ></script>
+</head>
+<body>
+	<div class="container">
+		<div class="topbar">
+  			<a class="logo">M R</a>
+  			<a class="sig" href="#Register">Register</a>
+  			<a class="sig" href="#Signin">Sign in</a>
+  			<div class="clr"></div>
+  			<input type="text" placeholder="Search your movie">
+  			<input type="submit" value="Search" name="Submit">
+		</div>
+
+		<div class="topnav" id="myTopnav">
+		  <a href="#home" class="active">Home</a>
+		  <a href="#Categories">Categories</a>
+		  <a href="#about">Wishlist</a>
+		  <a href="#wishlist">About Us</a>
+		  <a href="#logout">Contact Us</a>
+
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+		</div>
+
+		<div class="main">
+			<?php 
+				if(isset($_POST['submit'])){
+					echo "
+					<div class="leftside">
+						<h1 class="title" name="title">2.0</h1>
+						<div class="movie_image" name="movie_image">
+							<img src="../images/comics.webp" alt="Comics">
+						</div>
+					</div>
+					<div class="rightside">
+						<h2>Details</h2>
+						<h3 name="gener">Gener : Si-Fi,Triller </h3>
+						<h3 name="Director">Director : Shankar </h3>
+						<h3 name="Music">Music : A R Rahaman </h3>
+						<h3 name="Producer">Producer : LYCA Productions </h3>
+						<h3 name="Budget">Budget : 553 cr </h3>
+						<h3 name="BoxOffice">Box Office : - </h3>
+						<h3 name="Synopsys">Synopsis : - </h3>
+						<h3 namr="rating">Rating : 9.5 </h3>
+					</div>";
+				}
+			?>
+			<div class="clear"></div>
+		</div>
+
+		<footer>
+			<p>Copyright &copy; 2019-2020</p>
+		</footer>
+	</div>
+</body>
+</html>

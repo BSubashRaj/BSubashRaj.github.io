@@ -1,0 +1,383 @@
+.contain{
+	margin:10px;
+}
+/*TOP BAR*/
+.topbar {
+  overflow: hidden;
+  background-image: url("../images/wall2copy.png");
+  border-radius: 3px;
+}
+
+.topbar .logo{
+  color: #fafafa;
+}
+
+.topbar a{
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: monospace;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topbar .sig {
+  float: right;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topbar input[type=text] {
+  float: left;
+  width: 350px;
+  padding: 8px;
+  color: #272727;
+  margin: 10px 0px 6px 10px;
+  border:none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  font-family: monospace;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+.topbar input[type=submit] {
+  border:none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  padding: 9px;
+  margin: 10px 10px 8px 10px;
+  font-family: monospace;
+  background-color: #fafafa;
+  color: #272727;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+   .topabar input[type=text]{
+    float: left;
+    display: block;
+    width: 350px;
+    margin: 0;
+    padding: 14px;
+  }
+  .clr{
+  	clear: both;
+  }
+  .topbar input[type=submit]{
+  	float: left;
+  }
+  .topbar .sig{
+  	float:right;
+  }
+  .topbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+/*NAVIGATION*/
+.topnav {
+    background-color: #fafafa;
+    border:none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: #272727;
+    padding: 14px 16px;
+    background-color: #fafafa;
+    font-family: monospace;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: left;
+    color: #272727;
+    font-size: 17px;
+    margin-top: 5px;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #676767;
+    color: #fafafa;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #676767;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #272727;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #676767;
+    color: #fafafa;
+}
+
+/* Add an active class to highlight the current page */
+.topnav .active{
+	color:#fafafa;
+	background:#272727;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 650px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align:left; 
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/*MAIN*/
+.main{
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;*/
+  background-color: #fafafa;
+	padding:0px;
+}
+
+.container{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+}
+.det{
+  padding:10px;
+}
+.btn{
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  background: #272727;
+  font-family: monospace;
+  font-size: 18px;
+  color: #fafafa;
+}
+.col-md-6 h3{
+  text-align: center;
+  font-family: monospace;
+}
+
+.leftside{
+  width:26%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  height: auto;
+  float: left;
+}
+.leftside{
+  text-align: center;
+  font-family: monospace;
+}
+.movie_image img{
+  width:100%;
+  height: auto;
+}
+.rightside{
+  width:28%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  height:auto;
+  float:left;
+}
+.rightside h2{
+  text-align: center;
+  font-family: monospace;
+  margin-top: 10px;
+}
+.ff{
+  font-family: monospace;
+  font-size: 18px;
+}
+.side{
+  width:38%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  padding:10px;
+  margin-right: 10px;
+  height:auto;
+  float:right;
+}
+@media screen and (max-width: 1055px){
+  .leftside{
+    float: left;
+    width: 26%;
+  }
+  .ff{
+    font-size:15px;
+  }
+  .rightside{
+    width: 28%;
+    float: left;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 940px){
+  .leftside{
+    float: left;
+    width: 38%;
+    margin-left: 20px;
+  }
+  .ff{
+    font-size:15px;
+  }
+  .rightside{
+    width: 52%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .cls{
+    clear:both;
+  }
+  .side{
+    width: 92%;
+    margin:10px 20px 10px 20px;
+    float: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 800px){
+  .leftside{
+    margin:0px 15px 10px 15px;
+    float: left;
+    width: 35%;
+  }
+  .ff{
+    font-size:15px;
+  }
+  .rightside{
+    width: 50%;
+    margin-left: 10px;
+    float: left;
+  }
+  .cls{
+    clear:both;
+  }
+  .side{
+    margin:15px;
+    width: 90%;
+    float: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 530px){
+  .leftside{
+    margin:15px;
+    float: none;
+    width: 94%;
+    display: block;
+  }
+  .ff{
+    font-size:15px;
+  }
+  .rightside{
+    margin:15px;
+    width: 90%;
+    float: none;
+    display: block;
+  }
+  .side{
+    width: 90%;
+    float: none;
+    display: block;
+  }
+}
+.single{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  padding:10px;
+}
+.clear{
+	clear:both;
+}
+
+/*FOOTER*/
+footer{
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	padding:20px;
+	text-align: center;
+  color: #fafafa;
+  margin-top: 10px;
+  background-image: url("../images/wall2copy.png");
+	font-size: 20px;
+	font-family: monospace;
+	border-radius: 5px;
+}
